@@ -41,6 +41,16 @@ myrepo/
 
 No server. No CLI. No index.
 
+## Install
+
+munera has no runtime to install. There are two steps:
+
+1. **Create the directory structure** in your repository — `munera/plan.md` and the `open/` and `closed/` subdirectories.
+
+2. **Give your agent the spec.** Copy the contents of either [`MUNERA-PROSE.md`](MUNERA-PROSE.md) (plain English) or [`MUNERA-LAMBDA.md`](MUNERA-LAMBDA.md) (compact lambda notation) into your project's agent context file — typically `AGENTS.md`, `CLAUDE.md`, or equivalent. This is how the agent learns the protocol. Without it, the directory is just files.
+
+Choose prose or lambda based on your agent and your preference. Both are normatively equivalent.
+
 ## Process is yours
 
 munera defines mechanics, not process. The spec describes the shape of the directory, what each file means, and what `open/` vs `closed/` imply — nothing about how humans and agents collaborate around those artefacts. That's deliberate: you're free to impose whatever process fits your team, your trust level with the agent, or your review pipeline. PR-gated, fully autonomous, human-driven with the agent as executor, propose-and-confirm — all work against the same files.
