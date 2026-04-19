@@ -43,13 +43,11 @@ No server. No CLI. No index.
 
 ## Install
 
-munera has no runtime to install. There are two steps:
+munera has no runtime to install.
 
-1. **Create the directory structure** in your repository — `munera/plan.md` and the `open/` and `closed/` subdirectories.
+Copy the contents of either [`MUNERA-PROSE.md`](MUNERA-PROSE.md) (plain English) or [`MUNERA-LAMBDA.md`](MUNERA-LAMBDA.md) (compact lambda notation) into your project's agent context file — typically `AGENTS.md`, `CLAUDE.md`, or equivalent. The agent will set up the directory structure automatically.
 
-2. **Give your agent the spec.** Copy the contents of either [`MUNERA-PROSE.md`](MUNERA-PROSE.md) (plain English) or [`MUNERA-LAMBDA.md`](MUNERA-LAMBDA.md) (compact lambda notation) into your project's agent context file — typically `AGENTS.md`, `CLAUDE.md`, or equivalent. This is how the agent learns the protocol. Without it, the directory is just files.
-
-Choose prose or lambda based on your agent and your preference. Both are normatively equivalent.
+Choose prose or lambda based on your agent and your preference. Both are normatively equivalent. The lambda notation follows the [nucleus](https://github.com/michaelwhitford/nucleus) convention.
 
 ## Process is yours
 
