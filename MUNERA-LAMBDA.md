@@ -5,8 +5,8 @@
 | process → user
 
 λ repo. munera/ ⊂ root
-| munera/plan.md
-| munera/open/ ∧ munera/closed/
+| MUST: munera/plan.md
+| SHOULD: munera/open/ ∧ munera/closed/
 | unknown_files → preserve ∧ ¬parse ∧ ¬delete
 
 λ task. dir ∈ munera/open/ ∨ munera/closed/
@@ -18,17 +18,17 @@
 | alloc → max(NNN, open/ ∪ closed/) + 1
 | collision(concurrent_branch) → rename ∧ ¬merge
 
-λ task_dir. MUST contain:
-| design.md    → what ∧ why | goal ∧ context ∧ constraints ∧ acceptance
-| plan.md      → how | approach ∧ decisions ∧ risks | ¬execute
-| steps.md     → do | checklist | mutates(continuously)
+λ task_dir. MUST contain(before_execution):
+| design.md         → what ∧ why | goal ∧ context ∧ constraints ∧ acceptance
+| plan.md           → how | approach ∧ decisions ∧ risks | written(before_execution)
+| steps.md          → do | checklist | mutates(continuously)
 | implementation.md → decisions ∧ discoveries | append_only | local_memory
-| other(.md)   → preserve
+| other(.md)        → preserve
 
 λ temporal_split.
-  design.md        → stabilises(early)
-| plan.md          → set(before_execution) | changes ↔ approach_changes
-| steps.md         → active_surface(during_execution)
+  design.md         → stabilises(early)
+| plan.md           → set(before_execution) | changes ↔ approach_changes
+| steps.md          → active_surface(during_execution)
 | implementation.md → in_flight_decisions ∧ discoveries ∧ trade_offs
                     | self_identifying(date ∨ sha ∨ step_ref)
 

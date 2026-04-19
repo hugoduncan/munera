@@ -30,7 +30,7 @@ IDs are allocated by convention: use `max(existing NNN) + 1` across `open/` and 
 
 Inside each task directory, four files form the canonical record of a human-agent conversation about that piece of work:
 
-> A task directory **MUST** contain:
+> A task directory **MUST** contain all four files before execution begins:
 >
 > - `design.md` — what and why (goal, context, constraints, acceptance).
 > - `plan.md` — how (approach, decisions, risks) — decided before execution.
