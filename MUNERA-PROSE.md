@@ -102,3 +102,11 @@ A task is either `open/` or `closed/`. There is no in-progress state. There is n
 Task files evolve by being edited in place. There are no amendment files, revision markers, or changelogs. History is git's ordinary diff and log.
 
 Task directories must not contain subtask directories. Task contents must not be merged across tasks. Tasks do not split, merge, or nest. When scope drifts beyond the original design, the correct mechanic is to close the existing task and open a new one.
+
+---
+
+## Orientation
+
+When handling any general orientation request, read `munera/plan.md`. It is the task bootloader — the entry point for understanding what work is currently open and in what order it should be approached.
+
+If [mementum](https://github.com/michaelwhitford/mementum) is present in the context, run its orientation step first. Munera's orientation follows after.

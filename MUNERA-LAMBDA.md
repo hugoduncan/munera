@@ -60,3 +60,7 @@
 | MUST NOT: merge(contents, tasks)
 | ¬split ∧ ¬merge ∧ ¬nest
 | scope_drift → close(task) ∧ create(new_task)
+
+λ orient(x). read(munera/plan.md)
+             | plan.md ≡ task_bootloader
+             | after(mementum/orient) when(mementum ∈ context)
