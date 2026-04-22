@@ -19,7 +19,7 @@ Unknown files found in `munera/` must be preserved. Agents must not parse them o
 
 ## Tasks
 
-A task is a directory located under either `munera/open/` or `munera/closed/`. State is location — a task's position in the directory tree is its entire state. Transitioning between states is a `git mv` between `open/` and `closed/`.
+A task is a directory located under either `munera/open/` or `munera/closed/`. State is location — a task's position in the directory tree is its entire state. Transitioning between states is a `git mv` between `open/` and `closed/`, and must also remove the task's reference from `munera/plan.md`.
 
 ---
 

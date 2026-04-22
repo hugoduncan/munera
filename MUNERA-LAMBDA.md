@@ -11,7 +11,7 @@
 
 λ task. dir ∈ munera/open/ ∨ munera/closed/
 | state ≡ location
-| transition → git_mv(open/ ↔ closed/)
+| transition → git_mv(open/ ↔ closed/) ∧ remove(munera/plan.md)
 
 λ task_id. NNN-slug
 | NNN ∈ ℕ, zero_pad(≥3) | slug ∈ kebab_case
