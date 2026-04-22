@@ -19,7 +19,7 @@ Other files and directories are permitted. Agents leave unknown files alone — 
 
 ## 2. A task is a directory
 
-Each task is a directory under `open/` (active) or `closed/` (completed or abandoned). Transitioning between states is literally a `git mv` between those two parents. State is location.
+Each task is a directory under `open/` (active) or `closed/` (completed or abandoned). Transitioning between states is literally a `git mv` between those two parents, and must also remove the task's reference from `munera/plan.md`. State is location.
 
 Task directory names combine a sequential number and a human slug, in the form `NNN-slug`:
 
